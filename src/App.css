@@ -17,9 +17,6 @@ img {
 body {
   max-width: 100%;
   overflow-x: hidden;
-}
-
-body {
   background-color: #f6f6f6;
 }
 
@@ -78,14 +75,22 @@ nav {
 }
 .home-bannerImage-container {
   position: absolute;
-  top: -100px;
-  right: -170px;
-  z-index: -2;
+  top: 0;
+  right: 0;
+  z-index: -0;
   max-width: 700px;
 }
 .home-image-section {
-  max-width: 600px;
-  flex: 1;
+  position: relative;
+  top: +50;
+  right: -50;
+  min-heith: 600px;
+  heith: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: +2
+  ;
 }
 .home-text-section {
   flex: 1;
@@ -242,6 +247,7 @@ nav {
   cursor: pointer;
 }
 .testimonial-section-bottom {
+  margin: 2rem auto;
   margin-top: 2rem;
   background-color: white;
   padding: 1.5rem 2rem;
@@ -253,9 +259,7 @@ nav {
   flex-direction: column;
   text-align: center;
 }
-.testimonial-section-bottom {
-  margin: 2rem auto;
-}
+
 .testimonial-section-bottom p {
   font-weight: 700;
   color: #515151;
@@ -332,7 +336,8 @@ nav {
 }
 @media (max-width: 800px) {
   .nav-logo-container {
-    max-width: 140px;
+    max-width: 150px;
+    width: 100%;
   }
   .navbar-links-container {
     display: none;

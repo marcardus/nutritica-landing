@@ -1,6 +1,7 @@
 import React from "react";
 import BannerBackground from "../assets/home-banner-background.png";
 import BannerBackground2 from "../assets/about2-background-image.png";
+import IaBackground from "../assets/Ia-background-image.svg";
 import IaBanner from "../assets/about2-background-image.png";
 import BannerImage from "../assets/home-banner-image.png";
 import Navbar from "./Navbar";
@@ -11,8 +12,7 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <div className="home-banner-container">
-
-        <div className="home-bannerImage-container">
+       <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
@@ -28,7 +28,7 @@ const Home = () => {
           </button>
         </div>
         <div className="home-image-section">
-          <img src={IaBanner} alt="" />
+          <img src={IaBackground} alt="AI and Nutrition" />
         </div>
       </div>
     </div>
